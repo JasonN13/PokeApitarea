@@ -1,0 +1,5 @@
+
+<label for="cantidad">Cantidad</label>
+<input type="number" id="cantidad" [(ngModel)]="cantidad">
+<button (click)="cargandoPokemons()">Buscar</button>
+<app-pokemon *ngFor="let pokemon of pokemond?.results"[Pokemonlist]="pokemon"></app-pokemon>
